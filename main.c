@@ -123,7 +123,7 @@ while (*p){
 int main(int argc, char **argv) {
   if (argc != 2)
     error("%s: invalid number of arguments", argv[0]);
-  current_input = argv[1],
+  current_input = argv[1];
   Token *tok = tokenize();
 
   printf("  .globl main\n");
