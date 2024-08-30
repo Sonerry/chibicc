@@ -1,0 +1,8 @@
+# Executuable file
+chibicc
+
+# From test.sh
+tmp
+
+# All object file
+*.o
