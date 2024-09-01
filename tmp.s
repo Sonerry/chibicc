@@ -1,10 +1,10 @@
   .globl main
 main:
-  mov $10, %rax
-  neg %rax
-  neg %rax
+  mov $1, %rax
    push %rax
-  mov $5, %rax
+  mov $2, %rax
   pop %rdi
-  add %rdi, %rax
+  cmp %rdi, %rax
+  setle %al
+  movzb %al, %rax
 	ret
